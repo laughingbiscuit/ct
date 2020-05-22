@@ -9,3 +9,11 @@ CT is a small cli (12 lines) that prompts user for input, substitutes these valu
 
 Users can add their own templates to the `requests` directory. For dynamic values, such as getting an OAuth token then scripts from the `auth` folder can be called.
 
+### Demo
+
+[![asciicast](https://asciinema.org/a/GWEKLMpHEx6Axg8EuOU0D4HdT.svg)](https://asciinema.org/a/GWEKLMpHEx6Axg8EuOU0D4HdT)
+
+### To-do
+
+- accept values on the parameter for automated jobs
+
