@@ -1,0 +1,10 @@
+#!/bin/sh
+
+curl \
+  -H "Authorization: `sh ./auth/token.sh`" \
+  -H "X-Custom-Header: ${CUSTOM_HEADER}" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "${NAME}"
+  }'
+  https://httpbin.org/post

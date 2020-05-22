@@ -1,0 +1,12 @@
+#!/bin/sh
+
+read -p "Request type: " CT_REQ
+
+CT_VARS=
+for CT_VAR in `envsubst --variables "$(cat requests/$CT_REQ)" | grep -v "^CT_"`; do
+  echo "$CT_VAR : "
+  CT_VARS=" "$CT_VARS" "$CT_VAR"="`cat `
+done
+
+env $CT_VARS envsubst < requests/$CT_REQ > command.sh
+echo "Command generated at command.sh"
