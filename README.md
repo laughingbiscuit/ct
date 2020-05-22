@@ -16,4 +16,6 @@ Users can add their own templates to the `requests` directory. For dynamic value
 ### To-do
 
 - accept values as parameters for automated jobs
+- autocomplete
+- adding some example request templates for Apigee mgmt API, gcloud, httpbin etc.
 
