@@ -15,5 +15,5 @@ Users can add their own templates to the `requests` directory. For dynamic value
 
 ### To-do
 
-- accept values on the parameter for automated jobs
+- accept values as parameters for automated jobs
 
